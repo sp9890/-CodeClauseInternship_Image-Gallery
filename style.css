@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  background-color: #888;
+}
+
+.tab-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 70px;
+  align-items: center;
+  background-color: #888;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.tab-item {
+  background-color: #444;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  cursor: pointer;
+  transition: ease-in-out .5s all;
+}
+
+.tab-item:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+.gallery-container {
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  float: left;
+  padding: 2px;
+  width: 25%;
+  height: 150px;
+  transition: all .5s ease-in-out;
+}
+
+.hide {
+  transform: scale(0);
+  height: 0;
+  padding: 0;
+  transition: all .5s ease-in-out;
+}
+
+@keyframes mymove
+{ from {top:0px; opacity: 0;}
+  to {top:100px; opacity: 1}
+}
